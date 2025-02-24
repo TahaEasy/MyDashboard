@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+aside,
+main {
+  transition: all 200ms ease;
+}
+
+.MuiChartsLegend-mark {
+  rx: 5;
+}
+body {
+  background: hsl(var(--twc-dash-back));
+}
+.MuiChartsTooltip-paper {
+  background-color: hsl(var(--twc-dash-back)) !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+.MuiChartsTooltip-table td {
+  color: hsl(var(--twc-text)) !important;
+}
+.MuiChartsTooltip-table td p {
+  font-family: "Rubik", "Rubik Fallback" !important;
+  font-style: normal;
+}
+
+/* .MuiChartsAxisHighlight-root {
+  stroke: hsl(var(--twc-text));
+} */
