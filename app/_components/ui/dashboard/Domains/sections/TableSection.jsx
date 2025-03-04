@@ -1,25 +1,16 @@
 "use client";
 
-import { LuPlus, LuRefreshCw } from "react-icons/lu";
-import Card from "../../Card";
 import { projects } from "@/app/_lib/neededArrays";
 import Table from "../../Table";
-import { useModal } from "@/app/_components/contexts/ModalContext";
-import Button from "../../../Button";
+import Card from "../../Card";
+import { LuRefreshCw } from "react-icons/lu";
 
 const TableSection = () => {
-  const { modal } = useModal();
   return (
     <Card>
       <Card.Header>
         <Card.Header.StartSide>
-          <Card.Title>پروژه ها</Card.Title>
-          <div>
-            <Button onClick={() => modal("createProject")}>
-              پروژه جدید
-              <LuPlus />
-            </Button>
-          </div>
+          <Card.Title>دامنه ها</Card.Title>
         </Card.Header.StartSide>
         <Card.Header.EndSide>
           <button>
@@ -32,10 +23,10 @@ const TableSection = () => {
           <thead>
             <tr>
               <Table.Th>#</Table.Th>
-              <Table.Th>نام پروژه</Table.Th>
+              <Table.Th>نام دامنه</Table.Th>
               <Table.Th>اهمیت</Table.Th>
               <Table.Th>وضعیت</Table.Th>
-              <Table.Th>مدیر پروژه</Table.Th>
+              <Table.Th>پروژه دامنه</Table.Th>
               <Table.Th>تاریخ شروع</Table.Th>
               <Table.Th>تاریخ پایان</Table.Th>
             </tr>

@@ -18,7 +18,7 @@ const LoadingWrapper = ({ children }) => {
     }
 
     return () => window.removeEventListener("load", handleLoad);
-  }, []);
+  }, [setIsLoading]);
 
   return (
     <>

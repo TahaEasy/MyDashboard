@@ -24,7 +24,7 @@ const CountingChartCard = ({ counting: { title, count, data } }) => {
                   paddingAngle: 3,
                   cornerRadius: 5,
                   cx: 230,
-                  cy: 80,
+                  cy: "50%",
                 },
               ]}
               slotProps={{
@@ -42,23 +42,9 @@ const CountingChartCard = ({ counting: { title, count, data } }) => {
                   },
                   markGap: 5,
                 },
-                // popper: {
-                //   sx: {
-                //     "& .MuiChartsTooltip-root": {
-                //       backgroundColor: "hsl(var(--twc-dash-back))",
-                //       padding: 4,
-                //       borderRadius: 4,
-                //       "& .MuiTypography-root": {
-                //         fontFamily: '"Rubik", "Rubik Fallback"',
-                //         fontStyle: "normal",
-                //         fill: "hsl(var(--twc-text)) !important",
-                //       },
-                //     },
-                //   },
-                // },
               }}
               width={350}
-              height={160}
+              height={200}
             />
           </div>
         </Card.Body>

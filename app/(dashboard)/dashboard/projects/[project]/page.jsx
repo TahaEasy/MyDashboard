@@ -1,21 +1,17 @@
+import LineChartCard from "@/app/_components/ui/dashboard/Projects/LineChartCard";
 import PageHeader from "@/app/_components/ui/dashboard/PageHeader";
 import DomainsCard from "@/app/_components/ui/dashboard/Projects/DomainsCard";
-import LineChartCard from "@/app/_components/ui/dashboard/Projects/LineChartCard";
 import ModalsSection from "@/app/_components/ui/dashboard/Projects/sections/ModalsSection";
 import TableSection from "@/app/_components/ui/dashboard/Projects/sections/TableSection";
 
-const Page = () => {
-  // await new Promise((resolve) => {
-  //   setTimeout(() => {
-  //     resolve();
-  //   }, 10000);
-  // });
+export const generateStaticParams = () => [{ project: "1" }, { project: "2" }];
 
+const Page = ({ params }) => {
   return (
     <div>
       <ModalsSection />
       <div className="mb-4">
-        <PageHeader title="پروژه ها" />
+        <PageHeader title={`پروژه شماره ${params?.project}`} />
       </div>
       <div className="my-4">
         <div className="w-full grid grid-cols-2 gap-4">

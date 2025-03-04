@@ -1,3 +1,112 @@
+import {
+  LuChartNoAxesCombined,
+  LuClipboardList,
+  LuKey,
+  LuLayoutDashboard,
+  LuRadio,
+} from "react-icons/lu";
+
+export const links = [
+  {
+    placeholder: "داشبورد",
+    href: "/dashboard",
+    Icon: LuLayoutDashboard,
+  },
+  {
+    placeholder: "پروژه ها",
+    href: "/dashboard/projects",
+    isLink: false,
+    Icon: LuChartNoAxesCombined,
+    projects: [
+      {
+        placeholder: "پروژه 1",
+        href: "/dashboard/projects/1",
+        Icon: LuClipboardList,
+        domains: [
+          {
+            placeholder: "دامنه 1",
+            href: "/dashboard/domains/1",
+            Icon: LuRadio,
+            keywords: [
+              {
+                placeholder: "کیورد 1",
+                href: "/dashboard/keywords/1",
+                Icon: LuKey,
+              },
+              {
+                placeholder: "کیورد 2",
+                href: "/dashboard/keywords/2",
+                Icon: LuKey,
+              },
+              {
+                placeholder: "کیورد 3",
+                href: "/dashboard/keywords/3",
+                Icon: LuKey,
+              },
+            ],
+          },
+          {
+            placeholder: "دامنه 2",
+            href: "/dashboard/domains/2",
+            Icon: LuRadio,
+            keywords: [
+              {
+                placeholder: "کیورد 1",
+                href: "/dashboard/keywords/4",
+                Icon: LuKey,
+              },
+              {
+                placeholder: "کیورد 2",
+                href: "/dashboard/keywords/1",
+                Icon: LuKey,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        placeholder: "پروژه 2",
+        href: "/dashboard/projects/2",
+        Icon: LuClipboardList,
+        domains: [
+          {
+            placeholder: "دامنه 1",
+            href: "/dashboard/domains/3",
+            Icon: LuRadio,
+          },
+          {
+            placeholder: "دامنه 2",
+            href: "/dashboard/domains/4",
+            Icon: LuRadio,
+            keywords: [
+              {
+                placeholder: "کیورد 1",
+                href: "/dashboard/keywords/2",
+                Icon: LuKey,
+              },
+              {
+                placeholder: "کیورد 2",
+                href: "/dashboard/keywords/3",
+                Icon: LuKey,
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  // {
+  //   placeholder: "دامنه ها",
+  //   href: "/dashboard/domains",
+  //   Icon: LuRadio,
+  // },
+  // {
+  //   placeholder: "کیورد ها",
+  //   href: "/dashboard/keywords",
+  //   Icon: LuKey,
+  // },
+];
+
 export const months = [
   "فروردین",
   "اردیبهشت",
@@ -89,5 +198,31 @@ export const domains = [
     placeholder: "دامنه 4",
     domain: "127.0.0.1:3000",
     keywords: ["کیورد 1"],
+  },
+];
+export const keywords = [
+  {
+    id: "1",
+    placeholder: "کیورد 1",
+    region: "ایران",
+    language: "فارسی",
+  },
+  {
+    id: "2",
+    placeholder: "کیورد 2",
+    region: "انگلیس",
+    language: "انگلیسی",
+  },
+  {
+    id: "3",
+    placeholder: "کیورد 3",
+    region: "قزاقستان",
+    language: "قزاقستانی",
+  },
+  {
+    id: "4",
+    placeholder: "کیورد 4",
+    region: "ترکیه",
+    language: "ترکی",
   },
 ];

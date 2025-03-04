@@ -15,12 +15,6 @@ const TableSection = () => {
       <Card.Header>
         <Card.Header.StartSide>
           <Card.Title>پروژه ها</Card.Title>
-          <div>
-            <Button onClick={() => modal("createProject")}>
-              پروژه جدید
-              <LuPlus />
-            </Button>
-          </div>
         </Card.Header.StartSide>
         <Card.Header.EndSide>
           <button>

@@ -1,25 +1,16 @@
 "use client";
 
-import { LuPlus, LuRefreshCw } from "react-icons/lu";
-import Card from "../../Card";
 import { projects } from "@/app/_lib/neededArrays";
 import Table from "../../Table";
-import { useModal } from "@/app/_components/contexts/ModalContext";
-import Button from "../../../Button";
+import Card from "../../Card";
+import { LuRefreshCw } from "react-icons/lu";
 
 const TableSection = () => {
-  const { modal } = useModal();
   return (
     <Card>
       <Card.Header>
         <Card.Header.StartSide>
           <Card.Title>پروژه ها</Card.Title>
-          <div>
-            <Button onClick={() => modal("createProject")}>
-              پروژه جدید
-              <LuPlus />
-            </Button>
-          </div>
         </Card.Header.StartSide>
         <Card.Header.EndSide>
           <button>

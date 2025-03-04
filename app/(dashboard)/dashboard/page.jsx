@@ -2,10 +2,12 @@ import ChartsSection from "@/app/_components/ui/dashboard/Analytics/sections/Cha
 import CountingsSection from "@/app/_components/ui/dashboard/Analytics/sections/CountingsSection";
 import TableSection from "@/app/_components/ui/dashboard/Analytics/sections/TableSection";
 import PageHeader from "@/app/_components/ui/dashboard/PageHeader";
+import ModalsSection from "@/app/_components/ui/dashboard/Projects/sections/ModalsSection";
 
 const Page = () => {
   return (
     <div>
+      <ModalsSection />
       <div className="mb-4">
         <PageHeader />
       </div>
