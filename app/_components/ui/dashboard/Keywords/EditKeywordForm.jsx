@@ -3,17 +3,9 @@ import FormsSelects from "../Domains/FormsSelects";
 import Input from "../Input";
 import Button from "../../Button";
 
-const EditKeywordForm = ({ keyword }) => {
+const EditKeywordForm = ({ keyword, className }) => {
   return (
-    <div>
-      <div>
-        <Input
-          placeholder="نام کیورد..."
-          Icon={LuKey}
-          value={keyword.placeholder}
-          readOnly={true}
-        />
-      </div>
+    <div className={`${className}`}>
       <div>
         <FormsSelects />
       </div>
